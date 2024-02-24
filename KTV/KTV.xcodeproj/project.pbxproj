@@ -16,6 +16,7 @@
 		B766B8EC2B8A00F50062E0F5 /* KTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B766B8EB2B8A00F50062E0F5 /* KTVTests.swift */; };
 		B766B8F62B8A00F50062E0F5 /* KTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B766B8F52B8A00F50062E0F5 /* KTVUITests.swift */; };
 		B766B8F82B8A00F50062E0F5 /* KTVUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B766B8F72B8A00F50062E0F5 /* KTVUITestsLaunchTests.swift */; };
+		B766B9092B8A27370062E0F5 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B766B9082B8A27370062E0F5 /* Color.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B766B8F12B8A00F50062E0F5 /* KTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B766B8F52B8A00F50062E0F5 /* KTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTVUITests.swift; sourceTree = "<group>"; };
 		B766B8F72B8A00F50062E0F5 /* KTVUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTVUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B766B9082B8A27370062E0F5 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		B766B8D32B8A00F30062E0F5 /* KTV */ = {
 			isa = PBXGroup;
 			children = (
+				B766B9082B8A27370062E0F5 /* Color.xcassets */,
 				B766B8D42B8A00F30062E0F5 /* AppDelegate.swift */,
 				B766B8D62B8A00F30062E0F5 /* SceneDelegate.swift */,
 				B766B8D82B8A00F30062E0F5 /* ViewController.swift */,
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B766B8E12B8A00F50062E0F5 /* LaunchScreen.storyboard in Resources */,
+				B766B9092B8A27370062E0F5 /* Color.xcassets in Resources */,
 				B766B8DE2B8A00F50062E0F5 /* Assets.xcassets in Resources */,
 				B766B8DC2B8A00F30062E0F5 /* Main.storyboard in Resources */,
 			);
