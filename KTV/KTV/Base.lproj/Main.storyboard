@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -54,17 +55,33 @@
             </objects>
             <point key="canvasLocation" x="138" y="4"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="rFB-Q1-VkD">
             <objects>
-                <viewController id="QGH-GZ-HQY" sceneMemberID="viewController">
+                <viewController id="QGH-GZ-HQY" customClass="HomeViewController" customModule="KTV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ICk-n9-b7p">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rAy-pa-43a">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" name="bg"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="xtu-nh-8Bs"/>
                         <color key="backgroundColor" name="bg"/>
+                        <constraints>
+                            <constraint firstItem="xtu-nh-8Bs" firstAttribute="trailing" secondItem="rAy-pa-43a" secondAttribute="trailing" id="7ni-qD-1Us"/>
+                            <constraint firstItem="rAy-pa-43a" firstAttribute="top" secondItem="xtu-nh-8Bs" secondAttribute="top" id="D4V-nH-FH6"/>
+                            <constraint firstItem="rAy-pa-43a" firstAttribute="leading" secondItem="xtu-nh-8Bs" secondAttribute="leading" id="hvi-7B-xch"/>
+                            <constraint firstItem="xtu-nh-8Bs" firstAttribute="bottom" secondItem="rAy-pa-43a" secondAttribute="bottom" id="lna-UW-OxH"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="tabIcon_home" selectedImage="tabIcon_home_selected" id="ozI-Kt-ws6"/>
+                    <connections>
+                        <outlet property="tableView" destination="rAy-pa-43a" id="l2e-C9-EbS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="il2-ca-iRS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,15 +119,15 @@
             </objects>
             <point key="canvasLocation" x="2598" y="304"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tabbar Controller-->
         <scene sceneID="1FR-Yi-bs2">
             <objects>
-                <tabBarController storyboardIdentifier="tabbar" automaticallyAdjustsScrollViewInsets="NO" id="qsi-Fr-8eY" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabbar" automaticallyAdjustsScrollViewInsets="NO" id="qsi-Fr-8eY" customClass="TabbarController" customModule="KTV" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0QE-aw-Imd">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="bg"/>
                         <tabBarAppearance key="standardAppearance">
                             <color key="backgroundColor" name="bg"/>
                             <color key="shadowColor" name="stroke-light"/>
@@ -151,5 +168,8 @@
         <namedColor name="stroke-light">
             <color red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
